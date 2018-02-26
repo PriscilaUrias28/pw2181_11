@@ -1,0 +1,33 @@
+body 
+	{
+		/*background: #000000*/
+		background: purple;
+		/*background: rgb(155,40,33);*/
+		/*background: rgb(255,12,54);*/
+		color:white;
+	}
+
+header
+	{
+		border: 3px solid black;
+		text-align: center;
+
+	}
+
+header nav ul li
+	{
+		background: black;
+		border: 0.5px solid black;	
+		border-radius: 5px; /*redondea las cajas*/
+		display: inline-block; /*se ponen a un lado de la otra, als cajas se hicieron tan chicas como su contenido*/ /*es muy importante el inline block*/
+		width: 100px; /*ancho especifico*/
+	}
+
+	header nav ul li:hover /*no poner espacio porque no agarra*/
+	{
+		background: black;
+		border: 0.5px solid pink;	
+		border-radius: 5px; /*redondea las cajas*/
+		display: inline-block; /*se ponen a un lado de la otra, als cajas se hicieron tan chicas como su contenido*/ /*es muy importante el inline block*/
+		width: 100px; /*ancho especifico*/
+	}
