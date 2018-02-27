@@ -1,0 +1,24 @@
+CSS3 = Hojas d eestilo
+Maquetado= HTML5 + CSS3
+			(Diseño, colores, etc)
+Hojas de estilo
+	se llaman selectores y un selector puede ser una etiqueta, identificador, una clase o un pseudoelemeto.
+	Dentro de cada selector tiene atributos
+	Tanto etiquetas como atributos, todos en orden alfabético 
+
+
+Hojas de estilo:
+	*Selectores:
+		-Etiqueta
+			atributos:valor;
+		-Identificador
+ 			atributos:valor;
+		-Clase
+ 			atributos:valor;
+		-Pseudoelemtno 
+			atributos:valor;
+
+			Existe modelo de caja, dice que todos los elemetos est[a dentro de una caja (de un rectangulo)
+			block es 100 por ciento del ancho de la pantllla
+
+

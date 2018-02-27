@@ -7,9 +7,24 @@ body
 		color:white;
 	}
 
+main
+{
+	margin-top: 15px;
+}
+
+footer
+	{
+		border: 1px solid pink;
+		font-weight: bold; /*negritas*/
+		/*texto denrto del footer centrado:*/
+		padding: 20px;
+		text-align: center;
+
+	}
+
 header
 	{
-		border: 3px solid black;
+		border: 1px solid black;
 		text-align: center;
 
 	}
@@ -20,14 +35,28 @@ header nav ul li
 		border: 0.5px solid black;	
 		border-radius: 5px; /*redondea las cajas*/
 		display: inline-block; /*se ponen a un lado de la otra, als cajas se hicieron tan chicas como su contenido*/ /*es muy importante el inline block*/
+		padding: 5px 10px;
+		/*margin-right: 15px;*/
+		margin: 0px 50px 0px 0px;
 		width: 100px; /*ancho especifico*/
 	}
 
 	header nav ul li:hover /*no poner espacio porque no agarra*/
 	{
-		background: black;
-		border: 0.5px solid pink;	
+		background: pink;
+		border: 0.5px black;	
 		border-radius: 5px; /*redondea las cajas*/
 		display: inline-block; /*se ponen a un lado de la otra, als cajas se hicieron tan chicas como su contenido*/ /*es muy importante el inline block*/
+		padding: 5px 10px;
 		width: 100px; /*ancho especifico*/
+	}
+
+	main section article
+	{
+		border: 1px dashed black;
+		display: inline-block;
+		vertical-align: top;
+		/*quitarle el modo block*/
+		/*cambiarle el ancho a cada article:*/
+		width: 32.82%;
 	}
