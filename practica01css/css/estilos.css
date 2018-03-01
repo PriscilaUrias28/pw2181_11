@@ -1,0 +1,8 @@
+body
+	{
+		border:1px solid blue;/*border del body*/
+		font-size: 16px; /*tamaño normal de letra en el web, tamaño base*//* 16px=1em, y 1em es igual al ancho de la M*/
+		margin: 0 auto; /*centrar la caja de manera automática, mover cajas. Arriba y abajo 0, y los lados automáticos*/
+		max-width: 1024px; /*tamaño del body, resolución actual más pequeña */
+
+	}

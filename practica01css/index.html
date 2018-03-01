@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Práctica 01 CSS3</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header>
 		<img src="img/resplandor.png" alt="">
-		<img src="img/logo.png" alt="">
+		<img src="img/logo.png" id= "logo" alt=""><!--del id es único-->
 		<nav>
 			<ul>
 				<li>Inicio</li>
@@ -26,16 +27,19 @@
 			</form>
 		</nav>
 	</header>
-	<section>
+
+	<section id="seccion01">
 		<article>
 			<img src="img/slide2.jpg" alt="">
 		</article>
 	</section>
-	<section>
+
+	<section id="seccion02">
 		<article>
 			<img src="img/separador.jpg" alt="">
 			<br> 
-			Una Sección
+						<!--la etiqueta span es para poder seleccionar el texto-->
+			<span class="unaSeccion"> Una Sección</span>
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio, magnam, omnis beatae mollitia praesentium. Totam est eveniet eum quae nisi, consequuntur a architecto minus, doloribus placeat aliquam ex praesentium.
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis explicabo necessitatibus fugit dolorem magni reprehenderit, repudiandae quaerat iste molestias ex mollitia atque. Laudantium ex ad voluptatibus quia cupiditate ratione ut.
@@ -46,7 +50,8 @@
 		<article>
 			<img src="img/separador.jpg" alt="">
 			<br>
-			Otra Sección
+
+			<span class="otraSeccion"> Otra Sección</span>
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odit deserunt facilis eum, asperiores, enim nesciunt reiciendis, accusamus necessitatibus odio blanditiis nam ea quis unde expedita ipsam in harum dolore.
 			<br>
@@ -59,7 +64,7 @@
 		<article>
 			<img src="img/separador.jpg" alt="">
 			<br>
-			Un Vídeo
+			<span class="otraSeccion">Un Vídeo</span>
 			<br>
 
 			<img src="img/video.jpg" alt="">
