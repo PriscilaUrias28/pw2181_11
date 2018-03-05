@@ -9,11 +9,14 @@ body
 
 header
 	{
-		background: #b3d0e0
+		background: #b3d0e0; /*elemtal, los punto y coma siempre van*/
+		margin-bottom:15px;
 	}
+
 header form
 	{ /*flota todo hacia la dercha*/
 		float:right;
+		margin-bottom:15px;
 		margin-top: -33px;
 		margin-right: 15px;
 	}
@@ -26,8 +29,8 @@ header form input
 
 header form input[type="button"] /*referirme a un solo input, a los que son de tipo botton*/
 {
-	background: #66b951;
-	border: 1px #66b951;
+	background: green;
+	border: 1px solid green;
 	color: white;
 }
 
@@ -35,7 +38,7 @@ header form input[type="button"] /*referirme a un solo input, a los que son de t
 
 header nav
 	{
-		background: #006fc3; /*fondo*/
+		background: #026dc6; /*fondo*/
 		border-radius:  5px;/*esquinas redondeadas*/
 		margin: 0 auto;/*centrado*/
 		padding: 2px 0px; /*ancho*/
@@ -51,3 +54,19 @@ header nav ul li
 		{	
 			margin-top: -150px;
 		}
+
+#seccion01
+	{
+		margin-top: 15px;
+	}
+
+#seccion01 article
+	{
+		text-align: center;
+	}
+
+#seccion01 article img
+	{
+		border: 5px solid rgba(150,150,150,0.5);
+		width: 98%;
+	}
