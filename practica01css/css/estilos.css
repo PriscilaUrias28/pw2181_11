@@ -70,3 +70,61 @@ header nav ul li
 		border: 5px solid rgba(150,150,150,0.5);
 		width: 98%;
 	}
+
+#seccion02
+	{
+		margin-bottom: 20px;	
+	}
+#seccion02 article
+	{
+		display: inline-block;
+		vertical-align: top;
+		width: 32.82%;
+	}
+
+/*para no repetir códigos de las negritas*/
+/*PUEDO PONER MÁS DE UN SELECTOR PARA DISTINTOS ATRIBUTOS-VALOR*/
+/*redondea boton, letras azules, fondo blanco, cenrado*/
+.botones[type="submit"]
+	{
+		background: white;
+		border-radius: 5px ;
+		color: blue;
+		margin-left: 130px;
+
+	}
+	
+	/*Otra froma más correcta de hacerlo
+
+		#seccion02 article input[type="submit"]
+			{
+				background: white;
+				border-radius: 5px ;
+				color: blue;
+				margin-left: 130px;
+			}
+			
+	*/
+
+.otraSeccion,.unaSeccion
+	{
+		font-weight: bold; /*negritas*/
+	}
+
+.otraSeccion
+	{
+		
+		font-size: 2.5em;
+	}
+
+/*para utilizar clases ".";
+para utlizar id es "#" */
+.unaSeccion/*clase*/
+	{
+	
+	font-size: 4em;
+	}
+
+
+
+	
