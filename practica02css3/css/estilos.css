@@ -1,0 +1,40 @@
+
+body /*Siempre se empieza por el body*/
+	{
+		font-size:16px; /*1em*//*si cambias la fuente del navegador no haya ningún problema para npsptrps*/
+		margin:0 auto;
+		min-width: 1078px;
+		max-width: 1078px;
+	}
+
+header input
+	{
+		float: right;
+		margin-top: 15px;
+		margin-right: -200px;
+		position: relative; /*para ponerla encima de las imagenes*/
+	}
+
+header nav ul li /*para los elements*/
+	{
+		border-bottom: 1px solid gray;
+		color:gray;
+		display:inline-block;
+		font-size: 1.8em;
+		margin-right: 15px;
+		padding-bottom: 2.5px;
+		/*text-decoration: underline;*/
+	}
+
+#granthams
+	{
+		margin-top: 25px;
+		margin-left: 25px;
+	}
+
+#paint
+	{
+		float:right;/*flota, vete a la dercha*/	
+
+	}
+
