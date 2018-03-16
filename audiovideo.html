@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Audio y vídeo</title>
+		<link rel="stylesheet" href="css/audiovideo.css">
+	</head>
+	<body>
+		Etiquetas para audio y vídeo <br>
+		
+		<!--SINTAXIS NO CORRECTA:     <audio src=""></audio>-->
+		<audio controls loop> <!--Autoplay: para que se reproduzca solo. loop:para que se repita-->
+			<source src="audiovideo/media/audio/musica.mp3" type="">
+		</audio>
+		
+		<video controls loop preload> <!--EL NAVEGADOR ELEGIRÁ CUÁL ES EL ADECUADO...PARA ELLO ES SINTAXIS ADECUADA PREOLAD:para que se recargue antes-->
+			<source src="audiovideo/media/video/Chrome_ImF.mp4">
+			<source src="audiovideo/media/video/Chrome_ImF.ogv">
+			<source src="audiovideo/media/video/Chrome_ImF.webm">
+		</video>
+		<video controls preload>
+			<source src="audiovideo/media/video/html5.mp4">
+			<source src="audiovideo/media/video/html5.ogv">
+			<source src="audiovideo/media/video/html5.webm">
+		</video>
+	</body>
+</html>
