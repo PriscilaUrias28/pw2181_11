@@ -1,0 +1,42 @@
+article
+	{
+		background: greenyellow;
+		border: 2px solid black;
+		margin: 20px, 5px;
+		padding: 15px;
+		text-align: center;
+		transition:all 5s linear;
+		-o-transition:all 5s linear;
+		-moz-transition:all 5s linear;
+		-webkit-transition:all 5s linear;
+		-ms-transition:all 5s linear;
+		width: 400px;
+
+		/*TRANSFORMACION: LLEGAR DE UN PUNTO A A UN PUNTO B;
+		  TRANSICION: LLEGAR DE UN PUNTO 'A' A UN PUNTO 'B',
+		  PASO A PASO---->PASOS INTERMEIOS PARA LLEGAR DE 'A' a 'B'*/
+	}
+
+article p
+	{
+		font: 30px Tahoma;
+		font-weight: bold;
+		width: 100%;
+	}
+
+/*article:hover cuando se le pone el mouse encima.. es TRANSFORMACION prque es inmediata
+	{
+		height: 400px;
+		width: 800px;	
+	}*/
+
+article:hover
+	{
+		background: black;
+		color: greenyellow;
+		transform: translate(150px,350px); /*se van a trasladar 150px y 300px. ATRIBUTO Y FUNCION NO ESTANDAR QUE NO VA A FUNCIONAR*/
+		-o-transform: translate(150px,350px)
+		-moz-transform: translate(150px,350px)
+		-webkit-transform: translate(150px,350px)
+		-ms-transform: translate(150px,350px)
+	}

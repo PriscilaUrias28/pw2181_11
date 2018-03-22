@@ -1,0 +1,77 @@
+article
+	{
+		border:1px solid black;
+		border-radius: 5px;
+		height: 50px;
+		margin-top:10px;
+		width: 150px;
+	}
+
+#uno
+	{
+		/*LOS PREFIJOS Y LOS PARENTESIS VAN PEGADOS */
+		background: blue; /*Por si no soporta lo de el gradiente*/
+	
+		background: -o-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1)); /*opera*/
+		background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));/*Safari*/
+		background: -moz-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));/*Mozilla*/
+		background: -ms-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));/*Internet explorer- Edge*/
+		background: linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));/*para que funcione con todos los navegadores: */
+
+	}
+
+
+#dos
+	{
+		
+		background: blue; /*Por si no soporta lo de el gradiente*/
+	/*HASTA LA IZQUIERDA ROJO HASTA LLEGAR A AAMARILLO*/
+		background: -o-linear-gradient(to left, red, yellow); /*opera*/
+		background: -webkit-linear-gradient(to left, red, yellow);/*Safari*/
+		background: -moz-linear-gradient(to left, red, yellow);/*Mozilla*/
+		background: -ms-linear-gradient(to left, red, yellow);/*Internet explorer- Edge*/
+		background: linear-gradient(to left, red, yellow);/*para que funcione con todos los navegadores: */
+
+	}
+
+#tres
+	{
+		
+		background: blue; /*Por si no soporta lo de el gradiente*/
+	/*HASTA LA DERECHA ROJO HASTA LLEGAR A AAMARILLO*/
+		background: -o-linear-gradient(to right, red, yellow); /*opera*/
+		background: -webkit-linear-gradient(to right, red, yellow);/*Safari*/
+		background: -moz-linear-gradient(to right, red, yellow);/*Mozilla*/
+		background: -ms-linear-gradient(to right, red, yellow);/*Internet explorer- Edge*/
+		background: linear-gradient(to right, red, yellow);/*para que funcione con todos los navegadores: */
+
+	}
+
+
+#cuatro
+	{
+		
+		background: blue; /*Por si no soporta lo de el gradiente*/
+	/*DESDE LA DERECHA ROJO HASTA LLEGAR ABAJO AAMARILLO*/
+		background: -o-linear-gradient(to right bottom, red, yellow); /*opera*/
+		background: -webkit-linear-gradient(to right bottom, red, yellow);/*Safari*/
+		background: -moz-linear-gradient(to right bottom, red, yellow);/*Mozilla*/
+		background: -ms-linear-gradient(to right bottom, red, yellow);/*Internet explorer- Edge*/
+		background: linear-gradient(to right bottom, red, yellow);/*para que funcione con todos los navegadores: */
+
+	}
+
+#cinco
+	{
+		
+		background: blue; /*Por si no soporta lo de el gradiente*/
+	/*DESDE LA IZQUIERDA ROJO HASTA LLEGAR AABAJO EN AAMARILLO*/
+		background: -o-linear-gradient(to left bottom, red, yellow); /*opera*/
+		background: -webkit-linear-gradient(to left bottom, red, yellow);/*Safari*/
+		background: -moz-linear-gradient(to left bottom, red, yellow);/*Mozilla*/
+		background: -ms-linear-gradient(to left bottom, red, yellow);/*Internet explorer- Edge*/
+		background: linear-gradient(to left bottom, red, yellow);/*para que funcione con todos los navegadores: */
+
+	}
+
+
