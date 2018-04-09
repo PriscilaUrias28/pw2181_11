@@ -1,0 +1,49 @@
+
+
+#resumen,#experimento,#pruebas,#resultados,#conclusiones/*PONER EN COLOR ROJO EL TEXTO DE LAS SECCIONES MENOS EL ID referencias*/
+	{
+		color: tomato;
+
+	}
+
+section:not(#referencias)/*PONER EN COLOR ROSA EL TEXTO DE LAS SECCIONES MENOS EL ID referencias*/
+	{
+		color:hotpink;
+	}
+
+/*IMPAR*/
+li:nth-child(odd)/*n elementos hijos que sean impar en color verde*/
+	{
+		color: green;
+	}
+
+/*PAR*/
+li:nth-child(even)/*n elementos hijos que sean par en color azul*/
+	{
+		color: blue;
+	}
+
+li:nth-child(5) /*QUINTO ELEMENTO DE ARRIBA HACIA ABAJO*/
+	{
+		color:red;
+	}
+
+li:nth-last-child(1) /*PRIMER ELEMENTO DE ABAJO HACIA ARRIBA*//*Ya existe otro atributo para el "ÚLTIMO"*/
+		color:purple;
+	}
+
+article:first-child  /*equivale a: nth-child(1)*/
+	{
+		color: blue;
+	}
+
+article:last-child  /*equivale a: nth-last-child(1)*/
+	{
+		color: yellow;
+	}
+
+
+p:first-line /*PRIMER LÍNEA DE UN PÁRRAFO*/
+	{
+		font-weight: bold;
+	}
