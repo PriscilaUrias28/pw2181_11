@@ -1,0 +1,84 @@
+body
+	{
+		border:solid blue 1px;
+		font-size: 16px;
+		margin:0 auto;
+		min-width: 1078px;
+		max-width: 1078px;
+	}
+
+
+header
+	{
+		display: inline-block;
+		position: relative;
+
+	}
+
+header nav ul li
+	{
+		color:black;
+		display: inline-block;
+		font-size: 1.1em;
+		font-weight: bold;
+		margin-right: 18px;
+
+	}
+
+#baika
+	{
+		position: relative;
+		right: -608px;
+		bottom: 179px;
+
+	}
+
+#buy
+	{
+		position: relative;
+		right: -650px;
+		top:-55px;
+	}
+
+#gotoshop
+	{
+		position: relative;
+		right: -710px;
+		top:5px;
+	}
+
+#logo
+	{
+		margin-bottom: -55px;
+		margin-left: 20px;
+		position: relative;
+	}
+
+#secc01art01
+	{
+		border: 1.5px dashed gray;
+		font-size: 4em;
+		font-family: arial; 
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+#tres1 /* separar espacio entre los tres*/
+{
+
+		margin-left: 650px;
+		margin-top: 15px;
+		position: relative;
+	}
+
+.nita
+	{
+		font-weight: bold;
+
+	}
+
+.verde
+	{
+		color:#94cb2a;
+	}
+
