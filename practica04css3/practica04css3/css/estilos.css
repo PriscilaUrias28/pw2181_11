@@ -40,6 +40,7 @@ header nav ul li
 		top:-55px;
 	}
 
+
 #gotoshop
 	{
 		position: relative;
@@ -54,6 +55,7 @@ header nav ul li
 		position: relative;
 	}
 
+
 #secc01art01
 	{
 		border: 1.5px dashed gray;
@@ -62,13 +64,45 @@ header nav ul li
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-
-#tres1 /* separar espacio entre los tres*/
+#seccfotoart01
 {
+	
+	bottom: 495px;
+	position:relative;
+	
+}
+#seccfotoart02
+{
+	
+	bottom: 733px;
+	position:relative;
+	left: 400px;
+	
+}
+
+
+#movertexto
+	{
+		bottom:  535px;
+		position: relative;
+	}
+#tres1 /* separar espacio entre los tres*/
+	{
 
 		margin-left: 650px;
 		margin-top: 15px;
 		position: relative;
+	}
+
+.gris
+	{
+		color:gray;
+	}
+
+.letrachica
+	{
+		font-size: 1.1em;
+		font-family: arials;
 	}
 
 .nita
@@ -77,8 +111,16 @@ header nav ul li
 
 	}
 
+img.pequeña
+{
+height: 10px;
+width: 10px;
+}
+
 .verde
 	{
 		color:#94cb2a;
 	}
+
+
 
