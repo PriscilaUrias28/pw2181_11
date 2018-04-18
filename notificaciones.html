@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Notificaciones HTML5</title>
+</head>
+<body>
+	<button onclick="enviarNotificacion();">
+		Notificaciones
+	</button>
+	<script>
+		function enviarNotificacion()
+		{
+			//comprobar que el navegador soporta notificaciones
+			if(!("Notification" in window))
+				{
+					alert("No soporte notificaciones");
+				}
+
+				//comprobamos si autorizamos notificaciones
+				else if(Notification.permission==="granted")
+				{//si ya es autorizado, ya le podemos mpezar a mandar notificaciones
+					var notificacion=new Notification("Segunda notificación");
+				}
+				else if(Notification.permission==="denied"|| Notification.permission==="default")
+				{
+					//aqui pedimos permiso para lanzar notificacines
+					Notification.requestPermission(function(permission)
+					{//si el usuario concede,creamos la notificacion
+						if (permission==="granted")
+						{
+							var notificacion=new Notification("Bienvenido a las notificaciones de la pagina PW2181_11")
+						}
+					}); //el parentesis va a regresar la ejecucion de otra funcion
+				}
+			}
+
+	</script>
+	
+</body>
+</html>
