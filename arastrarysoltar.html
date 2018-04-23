@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrastrar y Soltar</title>
+	<style>
+		#div1,#div2 
+			{
+				float: left;
+				border:1px solid black;
+				height: 170px;
+				margin:10px;
+				padding: 10px;
+				width: 100px;
+			}
+	</style>
+</head>
+<body>
+	<h2>Arrastrar y Soltar</h2>
+	<!--se van a aarastrar elementos del 1 hacia el 2 y tambi[en del 2 al 1-->
+	<div id="div1" ondragover= "allowDrop(event)" ondrop="drop(event)">
+		<!--vamos a poner el elemeto que vamos a arrastrar-->
+		<img src="PRACTICA01CSS/img/HTML5logo.png" id="arrastre1" height="31" width="88" draggable="true" ondragstart="drag(event)" >
+		<img src="PRACTICA01CSS/img/logo.png" id="arrastre2" height="31" width="88" draggable="true" ondragstart="drag(event)" >
+		<img src="PRACTICA02CSS3/img/hoja.png" id="arrastre3" height="31" width="88" draggable="true" ondragstart="drag(event)" >
+		<img src="PRACTICA02CSS3/img/new.png" id="arrastre4" height="31" width="88" draggable="true" ondragstart="drag(event)" >
+		<img src="PRACTICA02CSS3/img/bg_offer.png" id="arrastre5" height="31" width="88" draggable="true" ondragstart="drag(event)" >
+
+	</div>
+	<div id="div2" ondragover= "allowDrop(event)" ondrop="drop(event)">
+		
+	</div>
+		<script>
+			function drop(ev)
+			{
+				ev.preventDefault();
+				var data = ev.dataTransfer.getData("text");
+				ev.target.appendChild(document.getElementById(data))
+			}
+
+
+			function allowDrop(ev)
+			{
+
+				ev.preventDefault(); //PERMITE QUE EL OBJETO CAIGA SOBRE ÉL
+			}
+
+			function drag(ev)
+			{
+				//Aqu[i guardamos en el contexto en el contenedor]
+				ev.dataTransfer.setData("text", ev.target.id)
+			}
+
+		</script>
+
+	
+</body>
+</html>
