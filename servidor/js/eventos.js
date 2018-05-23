@@ -4,12 +4,13 @@ var inicioApp = function() //activar todos los eventos que se ejecuten en el HTM
 var Aceptar=function()
 {
 	event.preventDefault();
-	var usuario=$("txtUsuario").val(); //aqui esta extrayendo el usaurio y lacontra
-	var clave =$("txtClave").val();
+	var usuario=$("#txtUsuario").val(); //aqui esta extrayendo el usaurio y lacontra
+	var clave =$("#txtClave").val();
 	var parametros="opc=validaentrada"+
 					"&usuario="+usuario+
 					"&clave="+clave+
-					"&id(opcional)="+Math.random();
+					"&idopcional="+Math.random();
+					//alert(parametros);
 $.ajax({
 	cache:false,
 	type: "POST",
@@ -19,7 +20,8 @@ $.ajax({
 	success: function(response)
 	{
 		if (response.respuesta ==true) {
-			alert("Bienvenido")
+			//alert("Bienvenido")
+			$("#secInicio").hide("slow");
 		}else
 		{
 			alert("Usuario o Clave Incorrecta(s)")
