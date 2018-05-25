@@ -16,7 +16,7 @@ $usuario = $_POST["usuario"];
 		$respuesta = true;
 		while($regConsulta = mysqli_fetch_array($resConsulta))
 		{
-			$nombre = $regConsulta["nombre"];
+			$nombre = utf8_encode($regConsulta["nombre"]);
 			$clave = $regConsulta["clave"];
 
 		}
@@ -31,9 +31,7 @@ $usuario = $_POST["usuario"];
 	print json_encode($salidaJSON);//CONVERTIRLO A JSON
 
 }
-
 $opc = $_POST["opc"];
-
 switch ($opc) {
 	case 'buscaUsuario':
 		buscausuario();

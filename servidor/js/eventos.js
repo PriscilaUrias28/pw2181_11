@@ -17,12 +17,11 @@ $.ajax({
 	dataType: "json",
 	url: "php/validaentrada.php",
 	data: parametros,
-	success: function(response)
-	{
+	success: function(response){
 		if (response.respuesta ==true) {
 			//alert("Bienvenido")
 			$("#secInicio").hide("slow");
-			$("#frmUsuarios").hide("slow");
+			$("#frmUsuarios").show("slow");
 			//posicipna el cursor en el cuadro de texop
 			$("txtNombreUsuario").focus();
 		}else
@@ -30,8 +29,7 @@ $.ajax({
 			alert("Usuario o Clave Incorrecta(s)")
 		}
 	},
-	error: function(xhr, ajaxOptions, trhownError)
-	{
+	error: function(xhr, ajaxOptions, trhownError){
 
 	
 	}
@@ -39,16 +37,18 @@ $.ajax({
 }
 var buscaUsuario=function()
 {
-	var usuario=$("txtNombreUsuario").val();
-	var parametros= "opc=buscaUsuario"+"&usuario="+usuario+"&aleatorio="+Math.random();
+	var usuario=$("#txtNombreUsuario").val();
+	var parametros= "opc=buscaUsuario"+
+					"&usuario="+usuario+
+					"&aleatorio="+Math.random();
 	
 	if (usuario != "") 
 	{
 		$.ajax({
 			cache:false,
-			type: "POST",
-			dataType: "json",
-			url: "php/buscausuario.php",
+			type:"POST",
+			dataType:"json",
+			url:"php/buscausuario.php",
 			data: parametros,
 			success: function(response)
 			{
@@ -60,6 +60,8 @@ var buscaUsuario=function()
 				else
 				{
 					$("#txtNombre").focus();
+					$("#txtNombre").val("");
+					$("#txtClaveUsuario").val("");
 				}
 			},
 			error: function(xhr, ajaxOptions, trhownError)
@@ -70,14 +72,14 @@ var buscaUsuario=function()
 }
 	var teclaNombreUsuario = function(tecla)
 	{
-		if (tecla.wich ==13) 
+		if (tecla.which ==13) 
 		{
 			buscaUsuario();
 		}
 	}
 
 $("#btnAceptar").on("click", Aceptar); //le activamos un al btn aceptar
-$("txtNombreUsuario").on("keypress", teclaNombreUsuario); 
+$("#txtNombreUsuario").on("keypress", teclaNombreUsuario); 
 $("#frmUsuarios").hide();
 
 } 
