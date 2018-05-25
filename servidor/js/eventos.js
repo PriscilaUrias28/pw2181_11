@@ -78,9 +78,36 @@ var buscaUsuario=function()
 		}
 	}
 
+	var Guardar = fuction(){
+		var usurio=$("#txtNombreUsuario").val();
+		var nombre=$("#txtNombre").val();
+		var clave=$("#txtClaveUsuario").val();
+
+		if(usuario!="" && nombre!="" && clave!=""){
+			$.ajax({
+			cache:false,
+			type:"POST",
+			dataType:"json",
+			url:"php/buscausuario.php",
+			data: parametros,
+			success: function(response)
+			{
+				
+			},
+			error: function(xhr, ajaxOptions, trhownError)
+			{
+			}
+		});
+
+		}else{
+			alert("Llene todos los campos")
+		}
+	}
+
 $("#btnAceptar").on("click", Aceptar); //le activamos un al btn aceptar
 $("#txtNombreUsuario").on("keypress", teclaNombreUsuario); 
 $("#frmUsuarios").hide();
+$("#btnGuardar").on("click", Guardar);
 
 } 
 $(document).ready(inicioApp);
