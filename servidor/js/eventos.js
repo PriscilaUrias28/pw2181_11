@@ -151,12 +151,39 @@ var buscaUsuario=function()
 		});
 	}
 }
+	var Listado= function(){
+		$("main > section").hide("slow");//hacemos que desaparezca el listado
+		$("#frmListado").show("slow");//hacemos que aparezca el listado
+
+		var parametros="opc=listado"+"&aleatorio="+Math.random();
+
+		$.ajax({
+			cache:false,
+			type:"POST",
+			dataType:"json",
+			url:"php/listado.php",
+			data: parametros,
+			success: function(response){
+				if(response.respuesta==true){
+					$("#tblListado").append(response.tabla);
+
+
+				}else{
+					alert("Ocurrió un error, intenté más tarde")
+				}
+			},
+			error: function(xhr, ajaxOptions, trhownError){
+			}
+		});
+	}
+
 
 $("#btnAceptar").on("click", Aceptar); //le activamos un al btn aceptar
 $("#txtNombreUsuario").on("keypress", teclaNombreUsuario); 
 $("#frmUsuarios").hide();
 $("#btnGuardar").on("click",Guardar);
 $("#btnBorrar").on("click",Borrar);
+$("#btnListado").on("click",Listado);
 
 } 
 $(document).ready(inicioApp);
